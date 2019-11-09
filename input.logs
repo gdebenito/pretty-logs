@@ -1,0 +1,13 @@
+this are some text logs (no json)
+(node:17) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+2019-11-09T15:06:24: PM2 log: App [index:0] online
+2019-11-09T15:06:24: PM2 log: App [index:0] starting in -fork mode-
+2019-11-09T15:06:24: PM2 log: Launching in no daemon mode
+2019-11-09T15:04:21: PM2 log: PM2 successfully stopped
+2019-11-09T15:04:21: PM2 log: pid=17 msg=process killed
+2019-11-09T15:04:21: PM2 log: App [index:0] exited with code [0] via signal [SIGINT]
+2019-11-09T15:04:21: PM2 log: 0 application online, retry = 3
+2019-11-09T15:04:21: PM2 log: Stopping app:index id:0
+{"level":30,"time":1531171074631,"msg":"hello world","pid":657,"hostname":"Davids-MBP-3.fritz.box","v":1}
+{"level":30,"time":1531171082399,"msg":"hello child!","pid":657,"hostname":"Davids-MBP-3.fritz.box","a":"property","v":1}
+{"level":50,"msg":"Error!"}

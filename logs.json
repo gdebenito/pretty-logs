@@ -1,0 +1,45 @@
+{
+    "default": {
+        "always": {
+            "time": {
+                "type": "transform",
+                "enabled": true,
+                "default": "now",
+                "transform": {
+                    "type": "number",
+                    "to": "date",
+                    "format": "%s%m"
+                },
+                "color": "blue"
+            }
+        },
+        "rules": {
+            "module": {
+                "type": "switch",
+                "switch": {
+                    "30": {
+                        "default": "INFO",
+                        "enabled": true,
+                        "color": "green"
+                    },
+                    "40": {
+                        "default": "WARN",
+                        "enabled": true,
+                        "color": "orange"
+                    },
+                    "50": {
+                        "default": "ERROR",
+                        "enabled": true,
+                        "color": "red"
+                    }
+                }
+            },
+            "msg": {
+                "type": "print",
+                "enabled": true,
+                "color": "white",
+                "max-length": 30
+            }
+        }
+    }
+}

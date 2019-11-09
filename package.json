@@ -1,0 +1,39 @@
+{
+  "name": "pretty-logs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node .",
+    "start:dev": "cat input.logs | ts-node src/index.ts",
+    "eslint": "./node_modules/.bin/eslint",
+    "eslint:fix": "./node_modules/.bin/eslint --fix src/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdebenito/pretty-logs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdebenito/pretty-logs/issues"
+  },
+  "homepage": "https://github.com/gdebenito/pretty-logs#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "date-format": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.7",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-typescript": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  }
+}
