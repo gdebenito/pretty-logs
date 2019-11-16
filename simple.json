@@ -1,0 +1,15 @@
+{
+    "time": {
+        "input":{
+            "format":"epoch"
+        },
+        "output": {
+            "format": "dddd, mmmm dS, yyyy, h:MM:ss TT",
+            "color": {
+                "type":"keyword",
+                "value":"cyan"
+            }
+        }
+    }
+}
+
