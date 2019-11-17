@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "cat input.logs | ts-node .",
+    "start": "cat input.logs | ts-node . ./examples/simple.json",
     "start:dev": "cat input.logs | ts-node src/index.ts",
     "eslint": "./node_modules/.bin/eslint",
     "eslint:fix": "./node_modules/.bin/eslint --fix src/**/*"

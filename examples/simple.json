@@ -1,0 +1,43 @@
+{
+    "format": "time level msg",
+    "properties": {
+        "time": {
+            "type":"number",
+            "always":true,
+            "default":"Date.now",
+            "transform": {
+                "type":"date",
+                "format": "dddd, mmmm dS, yyyy, h:MM:ss TT",
+                "color": {
+                    "type":"keyword",
+                    "value":"cyan"
+                }
+            }
+        },
+
+        "msg": {
+            "type":"string",
+            "transform": {
+                "type":"string",
+                "color": {
+                    "type":"keyword",
+                    "value":"cyan"
+                }
+            }
+        },
+
+        "level": {
+            "type":"number",
+            "transform": {
+                "type":"string",
+                "color": {
+                    "type":"keyword",
+                    "value":"red"
+                }
+
+            }
+
+        }
+    }
+
+}

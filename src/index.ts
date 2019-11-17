@@ -1,10 +1,21 @@
-import processLine from './process-line';
+import getProcessLine from './process-line';
 
-process.stdin.resume();
-process.stdin.setEncoding('utf-8');
+const main = async () => {
+  const configPath = process.argv[2];
+  console.log(configPath);
 
-process.stdin.on('data', (chunk: string) => chunk.split('\n').map((log) => processLine.emit('line', log)));
+  // const processLine = getProcessLine(configPath);
+  const processLine = await getProcessLine('../examples/simple.json');
 
-process.stdin.on('end', () => {
-  process.stdout.write('done');
-});
+  process.stdin.resume();
+  process.stdin.setEncoding('utf-8');
+
+  // TODO better :)
+  process.stdin.on('data', (chunk: string) => chunk.split('\n').map((log) => processLine.emit('line', log)));
+
+  process.stdin.on('end', () => {
+    process.stdout.write('done');
+  });
+};
+
+main();
