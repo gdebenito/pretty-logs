@@ -11,3 +11,5 @@ this are some text logs (no json)
 {"level":30,"time":1531171074631,"msg":"hello world","pid":657,"hostname":"Davids-MBP-3.fritz.box","v":1}
 {"level":30,"time":1531171082399,"msg":"hello child!","pid":657,"hostname":"Davids-MBP-3.fritz.box","a":"property","v":1}
 {"level":50,"msg":"Error!"}
+{"level":30,"time":1531171082399,"msg":"nested object","nested":{"object":":)"}}
+{"level":30,"time":1574011234669,"pid":24146,"hostname":"pc","module":"express","req":{"id":3,"method":"GET","url":"/","headers":{"host":"localhost:3000","user-agent":"curl/7.66.0","accept":"*/*"},"remoteAddress":"::1","remotePort":45068},"res":{"statusCode":200,"headers":{},"responseTime":1,"msg":"request completed","v":1}}

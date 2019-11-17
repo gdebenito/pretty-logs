@@ -17,6 +17,8 @@ const getProcessLine = async (configPath: string) => {
     } catch (err) {
       // unprocessable json
       process.stdout.write(`${line}\n`);
+      // only for debug
+      // console.error(err)
     }
   });
 

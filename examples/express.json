@@ -1,5 +1,5 @@
 {
-    "format": "time level msg \t alwaysMsg nested.object req.method ",
+    "format": "time level req.method res.statusCode \t msg ",
     "properties": {
         "time": {
             "always":true,
@@ -9,7 +9,7 @@
                 "format": "hh:MM:ss TT",
                 "color": {
                     "type":"keyword",
-                    "value":"cyan"
+                    "value":"white"
                 }
             }
         },
@@ -19,7 +19,7 @@
                 "type":"string",
                 "color": {
                     "type":"keyword",
-                    "value":"cyan"
+                    "value":"blue"
                 }
             }
         },
@@ -35,16 +35,6 @@
 
         },
 
-        "nested.object" : {
-            "transform": {
-                "type":"string",
-                "color": {
-                    "type":"keyword",
-                    "value":"red"
-                }
-            }
-        },
-
         "req.method" : {
             "transform": {
                 "type":"string",
@@ -55,9 +45,24 @@
             }
         },
 
-        "alwaysMsg": {
-            "always":true,
-            "default":"🤣"
+        "res.statusCode" : {
+            "transform": {
+                "type":"string",
+                "color": {
+                    "type":"keyword",
+                    "value":"blue"
+                }
+            }
+        },
+
+        "req.url" : {
+            "transform": {
+                "type":"string",
+                "color": {
+                    "type":"keyword",
+                    "value":"blue"
+                }
+            }
         }
     }
 
